@@ -1,0 +1,169 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+  <title>Simple demo of Realterm controlled from HTML page</title>
+<script  LANGUAGE="javascript">
+<!--
+
+/* -----------------15/12/2007 9:11p.m---------------
+Rountines to work with bits/bytes/ and Hex
+ --------------------------------------------------*/
+function HexStr2(N) { //Make a 2 digit, uppercase hex string
+  N+=256;
+var S=N.toString(16);
+S=S.substring(1,3);
+S=S.toUpperCase(S);
+  return S
+  }
+function HexStr4(N) { //Make a 4 digit, uppercase hex string
+  N+=65656;
+var S=N.toString(16);
+S=S.substring(1,5);
+S=S.toUpperCase(S);
+  return S
+  }
+function ClearBitInByte(N,Bit) {return N & ~Math.pow(2,Bit)}
+function SetBitInByte(N,Bit) {return N | Math.pow(2,Bit)}
+
+var RT ;  //this is the Realterm object
+var LedState=255; //current state of the 8 bit I/O port 
+
+/*****************************************************************
+  Start Realterm
+*****************************************************************/
+function RT_Start()
+{
+  if ( !RT ) {
+    RT = new ActiveXObject("realterm.realtermintf");  //create and start Realterm
+  }
+  RT.caption="HTML Demo";
+
+RT.HalfDuplex=1;
+RT.baud=57600;
+RT.FlowControl=2; //2=RTS/CTS
+RT.Port=1;
+RT.PortOpen=1;    //Realterm always starts by automaction with the port closed 
+RT.LinefeedIsNewline=1;
+RT.SelectTabSheet("I2C");
+
+}  // RT_Start
+
+/*****************************************************************
+  Close Realterm
+*****************************************************************/
+function RT_Close()
+{
+  if ( RT ) {
+    RT.Close();
+    RT=null;
+  }
+}  // RT_Close
+
+/*****************************************************************
+   Sends a hex  string to an I2C Keyboard attached to an I2C2PC adaptor
+ see www.i2cchip.com  for more information about the I2C2PC adaptor and the 
+ I2C Keyboard and 8 bit I/O
+*****************************************************************/
+function RT_SendTo8BitIO( Value )
+{ 
+  if ( RT==null ) {
+    RT_Start()
+  }
+  HexString=HexStr2(Value); //turn the 8 bit number into 2 hex digits
+  RT.PutString("G1");  //use bus#1 on the adaptor
+  RT.PutString("S40"); //address of PCF8574 I/O port
+  RT.PutString(HexString); //write the hex value to the port
+  RT.PutString("P");       //send STOP to I2C bus
+
+}  // RT_SendTo8BitIO
+
+
+function LedOn( Bit )
+/*****************************************************************
+*****************************************************************/
+{
+  LedState= ClearBitInByte(LedState, Bit);
+  RT_SendTo8BitIO(LedState);
+}  // RT_LedON(N)
+function LedOff( Bit )
+/*****************************************************************
+*****************************************************************/
+{
+  LedState= SetBitInByte(LedState, Bit);
+  RT_SendTo8BitIO(LedState);
+}  // RT_LedON(N)
+
+function LedClick() {
+   for ( i=0;i<document.Kbd1.Leds.length;i++ ) {
+    //RT_SendTo8BitIO(i);
+     if ( document.Kbd1.Leds[i].checked ==true ) {
+       LedState=ClearBitInByte(LedState,i);
+     } else {
+       LedState=SetBitInByte(LedState,i);
+     }
+   } //for
+   RT_SendTo8BitIO(LedState);
+  }
+
+function AllLeds(State) {
+  for ( i=0;i<document.Kbd1.Leds.length;i++ ) {
+       document.Kbd1.Leds[i].checked = State;
+       if ( State ) {
+          LedState=ClearBitInByte(LedState,i);
+       } else {
+       LedState=SetBitInByte(LedState,i);
+     }
+    }
+    RT_SendTo8BitIO(LedState);
+}
+//--></script>
+
+
+</head>
+
+<body onClose="RT_Close()">
+  <H1>Simple demo of Realterm in HTML</H1>
+
+This is a simple demo of Realterm from HTML, to get you going<BR>
+
+You should run it from Internet Explorer, as it is using ActiveX <BR>
+
+You will need to allow ActiveX content to run when IE asks you.  
+<P>
+This shows checkboxes controlling LED's through an I2CKbd and I2C2PC adaptor.
+                          
+
+</P>
+<P>
+
+<p align="left"><input id="buttonstart" name="buttonstart" type="button" value="Start Realterm" LANGUAGE="javascript" onclick="RT_Start()"></p>
+
+<p align="left">
+  <input name="buttonledoon" type="button" value="All Leds On " LANGUAGE="javascript" onclick="AllLeds(true)">
+  <input name="buttonledsff" type="button" value="All Leds Off" LANGUAGE="javascript" onclick="AllLeds(false)">
+  </p>
+<p align="left"><input id="buttonledoff0" name="buttonledoff0" type="button" value="Close Realterm " LANGUAGE="javascript" onclick="RT_Close()"></p>
+
+<H2>
+LED's
+</H2>
+<form name="Kbd1">
+<INPUT name="Leds" TYPE="checkbox" ALIGN="left" LANGUAGE="javascript" onclick="LedClick();">0 (Relay on 8 Bit I/O board)<br>
+<INPUT name="Leds" TYPE="checkbox" ALIGN="left" LANGUAGE="javascript" onclick="LedClick();">1<BR>
+<INPUT name="Leds" TYPE="checkbox" ALIGN="left" LANGUAGE="javascript" onclick="LedClick();">2<BR>
+<INPUT name="Leds" TYPE="checkbox" ALIGN="left" LANGUAGE="javascript" onclick="LedClick();">3<BR>
+<INPUT name="Leds" TYPE="checkbox" ALIGN="left" LANGUAGE="javascript" onclick="LedClick();">4<BR>
+<INPUT name="Leds" TYPE="checkbox" ALIGN="left" LANGUAGE="javascript" onclick="LedClick();">5<BR>
+<INPUT name="Leds" TYPE="checkbox" ALIGN="left" LANGUAGE="javascript" onclick="LedClick();">6<BR>
+<INPUT name="Leds" TYPE="checkbox" ALIGN="left" LANGUAGE="javascript" onclick="LedClick();">7<BR>
+</form>
+<P>
+Using an HTML page is a simple way to make a nice GUI application that controls
+Realterm. This example uses Javascript. If you are more familar with basic
+then you can use VBScript instead.
+  </P>
+
+</html>
+</body>
+          

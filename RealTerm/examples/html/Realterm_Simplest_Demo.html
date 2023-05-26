@@ -1,0 +1,90 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+  <title>Simple minimal demo of Realterm controlled from HTML page</title>
+<script  LANGUAGE="javascript">
+<!--
+var RT ;  //this is the Realterm object
+/*****************************************************************
+  Start Realterm
+*****************************************************************/
+function RT_Start()
+{
+
+  RT = new ActiveXObject("realterm.realtermintf");  //create and start Realterm
+  RT.caption="HTML Demo";
+
+RT.HalfDuplex=1;
+RT.baud=57600;
+RT.FlowControl=2; //2=RTS/CTS
+RT.Port=1;
+RT.PortOpen=1;    //Realterm always starts by automaction with the port closed 
+RT.LinefeedIsNewline=1;
+RT.SelectTabSheet("I2C");
+
+}  // RT_Start
+
+/*****************************************************************
+  Close Realterm
+*****************************************************************/
+function RT_Close()
+{
+  if ( RT ) {
+    RT.Close();
+  }
+}  // RT_Close
+
+/*****************************************************************
+   Sends a hex  string to an I2C Keyboard attached to an I2C2PC adaptor
+ see www.i2cchip.com  for more information about the I2C2PC adaptor and the 
+ I2C Keyboard and 8 bit I/O
+*****************************************************************/
+function RT_SendTo8BitIO( HexString )
+{
+  if ( RT==null ) { 
+    RT_Start();
+  }
+  RT.PutString("G1");  //use bus#1 on the adaptor
+  RT.PutString("S40"); //address of PCF8574 I/O port
+  RT.PutString(HexString); //write the hex value to the port
+  RT.PutString("P");       //send STOP to I2C bus
+
+}  // RT_SendTo8BitIO
+
+//--></script>
+
+
+</head>
+
+<body >
+  <H1>Simple demo of Realterm in HTML</H1>
+
+This is a minimal demo of Realterm from HTML, to get you going<BR>
+
+You should run it from Internet Explorer, as it is using ActiveX <BR>
+
+You will need to allow ActiveX content to run when IE asks you.  
+<P>
+
+  <a href="javascript:RT_Start()">Start Realterm</a>
+</P>
+  <a href="javascript:RT_SendTo8BitIO('00')">All LEDs ON</a> (Send commands to I2C2PC adaptor with I2C Leds)<BR>
+  <a href="javascript:RT_SendTo8BitIO('FF')">All LEDs OFF</a>
+
+</P>
+
+<a href="javascript:RT_Close()">Close Realterm</a>
+
+</P>
+<P>
+Using an HTML page is a simple way to make a nice GUI application that controls
+Realterm. This example uses Javascript. If you are more familar with basic
+then you can use VBScript instead.
+</P>
+
+
+
+</html>
+</body>
+          

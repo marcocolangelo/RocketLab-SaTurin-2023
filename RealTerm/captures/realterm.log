@@ -1,0 +1,562 @@
+APRO v4.06
+Compiler : Delphi 7
+Operating System : WinNT 6.2 
+Device: COM8
+Date/time: 21/04/23, 19:43:08
+Time      Type      SubType       Data      OtherData
+--------  --------  ------------  --------  ---------
+5800.124  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.185  Trigger   Status        00000011  
+5800.185  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.248  Trigger   Status        00000011  
+5800.248  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.310  Trigger   Status        00000011  
+5800.310  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.373  Trigger   Status        00000011  
+5800.373  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.435  Trigger   Status        00000011  
+5800.435  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.436  Trigger   Timer         00000018  
+5800.499  Trigger   Status        00000011  
+5800.501  TrDatChg  Timer         00000018  [08][00][00][00]
+5800.501  TrDatChg  Status        00000011  [20][B4][00][01]
+5800.561  Trigger   Status        00000011  
+5800.562  TrDatChg  Status        00000011  [20][B4][00][01]
+5800.624  Trigger   Status        00000011  
+5800.624  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.685  Trigger   Status        00000011  
+5800.685  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.746  Trigger   Status        00000011  
+5800.746  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.810  Trigger   Status        00000011  
+5800.810  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.873  Trigger   Status        00000011  
+5800.873  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.936  Trigger   Status        00000011  
+5800.936  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.998  Trigger   Status        00000011  
+5800.999  TrDatChg  Status        00000011  [00][B4][00][01]
+5800.999  Trigger   Timer         00000018  
+5801.061  Trigger   Status        00000011  
+5801.063  TrDatChg  Timer         00000018  [08][00][00][00]
+5801.063  TrDatChg  Status        00000011  [20][B4][00][01]
+5801.123  Trigger   Status        00000011  
+5801.124  TrDatChg  Status        00000011  [20][B4][00][01]
+5801.184  Trigger   Status        00000011  
+5801.184  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.245  Trigger   Status        00000011  
+5801.245  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.308  Trigger   Status        00000011  
+5801.308  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.370  Trigger   Status        00000011  
+5801.370  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.433  Trigger   Status        00000011  
+5801.433  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.494  Trigger   Status        00000011  
+5801.495  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.557  Trigger   Status        00000011  
+5801.557  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.557  Trigger   Timer         00000018  
+5801.619  Trigger   Status        00000011  
+5801.621  TrDatChg  Timer         00000018  [08][00][00][00]
+5801.621  TrDatChg  Status        00000011  [20][B4][00][01]
+5801.682  Trigger   Status        00000011  
+5801.683  TrDatChg  Status        00000011  [20][B4][00][01]
+5801.744  Trigger   Status        00000011  
+5801.744  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.807  Trigger   Status        00000011  
+5801.807  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.868  Trigger   Status        00000011  
+5801.868  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.931  Trigger   Status        00000011  
+5801.931  TrDatChg  Status        00000011  [00][B4][00][01]
+5801.994  Trigger   Status        00000011  
+5801.994  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.056  Trigger   Status        00000011  
+5802.056  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.117  Trigger   Status        00000011  
+5802.117  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.118  Trigger   Timer         00000018  
+5802.180  Trigger   Status        00000011  
+5802.182  TrDatChg  Timer         00000018  [08][00][00][00]
+5802.182  TrDatChg  Status        00000011  [20][B4][00][01]
+5802.242  Trigger   Status        00000011  
+5802.245  TrDatChg  Status        00000011  [20][B4][00][01]
+5802.306  Trigger   Status        00000011  
+5802.306  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.368  Trigger   Status        00000011  
+5802.369  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.430  Trigger   Status        00000011  
+5802.430  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.493  Trigger   Status        00000011  
+5802.493  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.555  Trigger   Status        00000011  
+5802.555  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.618  Trigger   Status        00000011  
+5802.619  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.680  Trigger   Status        00000011  
+5802.681  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.681  Trigger   Timer         00000018  
+5802.743  Trigger   Status        00000011  
+5802.745  TrDatChg  Timer         00000018  [08][00][00][00]
+5802.745  TrDatChg  Status        00000011  [20][B4][00][01]
+5802.804  Trigger   Status        00000011  
+5802.806  TrDatChg  Status        00000011  [20][B4][00][01]
+5802.867  Trigger   Status        00000011  
+5802.867  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.929  Trigger   Status        00000011  
+5802.930  TrDatChg  Status        00000011  [00][B4][00][01]
+5802.992  Trigger   Status        00000011  
+5802.992  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.055  Trigger   Status        00000011  
+5803.055  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.117  Trigger   Status        00000011  
+5803.117  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.179  Trigger   Status        00000011  
+5803.180  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.242  Trigger   Status        00000011  
+5803.242  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.243  Trigger   Timer         00000018  
+5803.305  Trigger   Status        00000011  
+5803.306  TrDatChg  Timer         00000018  [08][00][00][00]
+5803.306  TrDatChg  Status        00000011  [20][B4][00][01]
+5803.367  Trigger   Status        00000011  
+5803.368  TrDatChg  Status        00000011  [20][B4][00][01]
+5803.430  Trigger   Status        00000011  
+5803.430  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.492  Trigger   Status        00000011  
+5803.492  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.554  Trigger   Status        00000011  
+5803.555  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.616  Trigger   Status        00000011  
+5803.616  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.679  Trigger   Status        00000011  
+5803.679  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.741  Trigger   Status        00000011  
+5803.741  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.804  Trigger   Status        00000011  
+5803.805  TrDatChg  Status        00000011  [00][B4][00][01]
+5803.805  Trigger   Timer         00000018  
+5803.866  Trigger   Status        00000011  
+5803.869  TrDatChg  Timer         00000018  [08][00][00][00]
+5803.869  TrDatChg  Status        00000011  [20][B4][00][01]
+5803.929  Trigger   Status        00000011  
+5803.930  TrDatChg  Status        00000011  [20][B4][00][01]
+5803.991  Trigger   Status        00000011  
+5803.991  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.053  Trigger   Status        00000011  
+5804.053  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.115  Trigger   Status        00000011  
+5804.115  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.178  Trigger   Status        00000011  
+5804.178  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.240  Trigger   Status        00000011  
+5804.240  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.303  Trigger   Status        00000011  
+5804.303  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.365  Trigger   Status        00000011  
+5804.365  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.366  Trigger   Timer         00000018  
+5804.427  Trigger   Status        00000011  
+5804.429  TrDatChg  Timer         00000018  [08][00][00][00]
+5804.429  TrDatChg  Status        00000011  [20][B4][00][01]
+5804.489  Trigger   Status        00000011  
+5804.491  TrDatChg  Status        00000011  [20][B4][00][01]
+5804.552  Trigger   Status        00000011  
+5804.552  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.615  Trigger   Status        00000011  
+5804.615  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.677  Trigger   Status        00000011  
+5804.677  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.739  Trigger   Status        00000011  
+5804.740  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.802  Trigger   Status        00000011  
+5804.802  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.865  Trigger   Status        00000011  
+5804.865  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.927  Trigger   Status        00000011  
+5804.927  TrDatChg  Status        00000011  [00][B4][00][01]
+5804.928  Trigger   Timer         00000018  
+5804.989  Trigger   Status        00000011  
+5804.991  TrDatChg  Timer         00000018  [08][00][00][00]
+5804.991  TrDatChg  Status        00000011  [20][B4][00][01]
+5805.052  Trigger   Status        00000011  
+5805.053  TrDatChg  Status        00000011  [20][B4][00][01]
+5805.113  Trigger   Status        00000011  
+5805.114  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.177  Trigger   Status        00000011  
+5805.177  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.238  Trigger   Status        00000011  
+5805.238  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.301  Trigger   Status        00000011  
+5805.301  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.364  Trigger   Status        00000011  
+5805.364  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.426  Trigger   Status        00000011  
+5805.427  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.488  Trigger   Status        00000011  
+5805.489  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.489  Trigger   Timer         00000018  
+5805.551  Trigger   Status        00000011  
+5805.553  TrDatChg  Timer         00000018  [08][00][00][00]
+5805.553  TrDatChg  Status        00000011  [20][B4][00][01]
+5805.614  Trigger   Status        00000011  
+5805.615  TrDatChg  Status        00000011  [20][B4][00][01]
+5805.676  Trigger   Status        00000011  
+5805.676  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.739  Trigger   Status        00000011  
+5805.740  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.801  Trigger   Status        00000011  
+5805.801  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.864  Trigger   Status        00000011  
+5805.864  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.927  Trigger   Status        00000011  
+5805.927  TrDatChg  Status        00000011  [00][B4][00][01]
+5805.988  Trigger   Status        00000011  
+5805.988  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.050  Trigger   Status        00000011  
+5806.051  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.051  Trigger   Timer         00000018  
+5806.113  Trigger   Status        00000011  
+5806.115  TrDatChg  Timer         00000018  [08][00][00][00]
+5806.115  TrDatChg  Status        00000011  [20][B4][00][01]
+5806.175  Trigger   Status        00000011  
+5806.176  TrDatChg  Status        00000011  [20][B4][00][01]
+5806.238  Trigger   Status        00000011  
+5806.238  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.300  Trigger   Status        00000011  
+5806.301  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.363  Trigger   Status        00000011  
+5806.363  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.425  Trigger   Status        00000011  
+5806.425  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.487  Trigger   Status        00000011  
+5806.488  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.550  Trigger   Status        00000011  
+5806.551  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.613  Trigger   Status        00000011  
+5806.613  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.614  Trigger   Timer         00000018  
+5806.675  Trigger   Status        00000011  
+5806.678  TrDatChg  Timer         00000018  [08][00][00][00]
+5806.678  TrDatChg  Status        00000011  [20][B4][00][01]
+5806.738  Trigger   Status        00000011  
+5806.739  TrDatChg  Status        00000011  [20][B4][00][01]
+5806.799  Trigger   Status        00000011  
+5806.800  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.862  Trigger   Status        00000011  
+5806.862  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.924  Trigger   Status        00000011  
+5806.924  TrDatChg  Status        00000011  [00][B4][00][01]
+5806.987  Trigger   Status        00000011  
+5806.987  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.050  Trigger   Status        00000011  
+5807.050  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.112  Trigger   Status        00000011  
+5807.112  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.174  Trigger   Status        00000011  
+5807.174  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.175  Trigger   Timer         00000018  
+5807.237  Trigger   Status        00000011  
+5807.239  TrDatChg  Timer         00000018  [08][00][00][00]
+5807.239  TrDatChg  Status        00000011  [20][B4][00][01]
+5807.299  Trigger   Status        00000011  
+5807.301  TrDatChg  Status        00000011  [20][B4][00][01]
+5807.361  Trigger   Status        00000011  
+5807.362  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.424  Trigger   Status        00000011  
+5807.424  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.486  Trigger   Status        00000011  
+5807.486  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.548  Trigger   Status        00000011  
+5807.549  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.612  Trigger   Status        00000011  
+5807.612  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.674  Trigger   Status        00000011  
+5807.674  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.735  Trigger   Status        00000011  
+5807.735  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.735  Trigger   Timer         00000018  
+5807.798  Trigger   Status        00000011  
+5807.800  TrDatChg  Timer         00000018  [08][00][00][00]
+5807.800  TrDatChg  Status        00000011  [20][B4][00][01]
+5807.860  Trigger   Status        00000011  
+5807.861  TrDatChg  Status        00000011  [20][B4][00][01]
+5807.923  Trigger   Status        00000011  
+5807.923  TrDatChg  Status        00000011  [00][B4][00][01]
+5807.985  Trigger   Status        00000011  
+5807.985  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.048  Trigger   Status        00000011  
+5808.048  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.111  Trigger   Status        00000011  
+5808.111  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.174  Trigger   Status        00000011  
+5808.174  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.237  Trigger   Status        00000011  
+5808.237  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.299  Trigger   Status        00000011  
+5808.299  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.300  Trigger   Timer         00000018  
+5808.362  Trigger   Status        00000011  
+5808.364  TrDatChg  Timer         00000018  [08][00][00][00]
+5808.364  TrDatChg  Status        00000011  [20][B4][00][01]
+5808.423  Trigger   Status        00000011  
+5808.424  TrDatChg  Status        00000011  [20][B4][00][01]
+5808.486  Trigger   Status        00000011  
+5808.486  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.547  Trigger   Status        00000011  
+5808.548  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.610  Trigger   Status        00000011  
+5808.610  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.672  Trigger   Status        00000011  
+5808.672  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.734  Trigger   Status        00000011  
+5808.734  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.798  Trigger   Status        00000011  
+5808.798  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.860  Trigger   Status        00000011  
+5808.861  TrDatChg  Status        00000011  [00][B4][00][01]
+5808.862  Trigger   Timer         00000018  
+5808.923  Trigger   Status        00000011  
+5808.925  TrDatChg  Timer         00000018  [08][00][00][00]
+5808.925  TrDatChg  Status        00000011  [20][B4][00][01]
+5808.986  Trigger   Status        00000011  
+5808.987  TrDatChg  Status        00000011  [20][B4][00][01]
+5809.048  Trigger   Status        00000011  
+5809.049  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.111  Trigger   Status        00000011  
+5809.111  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.172  Trigger   Status        00000011  
+5809.173  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.235  Trigger   Status        00000011  
+5809.235  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.298  Trigger   Status        00000011  
+5809.298  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.360  Trigger   Status        00000011  
+5809.360  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.424  Trigger   Status        00000011  
+5809.424  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.424  Trigger   Timer         00000018  
+5809.486  Trigger   Status        00000011  
+5809.488  TrDatChg  Timer         00000018  [08][00][00][00]
+5809.488  TrDatChg  Status        00000011  [20][B4][00][01]
+5809.549  Trigger   Status        00000011  
+5809.550  TrDatChg  Status        00000011  [20][B4][00][01]
+5809.614  Trigger   Status        00000011  
+5809.614  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.677  Trigger   Status        00000011  
+5809.677  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.739  Trigger   Status        00000011  
+5809.739  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.802  Trigger   Status        00000011  
+5809.803  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.866  Trigger   Status        00000011  
+5809.866  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.928  Trigger   Status        00000011  
+5809.929  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.991  Trigger   Status        00000011  
+5809.991  TrDatChg  Status        00000011  [00][B4][00][01]
+5809.992  Trigger   Timer         00000018  
+5810.054  Trigger   Status        00000011  
+5810.056  TrDatChg  Timer         00000018  [08][00][00][00]
+5810.056  TrDatChg  Status        00000011  [20][B4][00][01]
+5810.116  Trigger   Status        00000011  
+5810.117  TrDatChg  Status        00000011  [20][B4][00][01]
+5810.178  Trigger   Status        00000011  
+5810.178  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.242  Trigger   Status        00000011  
+5810.242  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.306  Trigger   Status        00000011  
+5810.306  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.370  Trigger   Status        00000011  
+5810.370  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.433  Trigger   Status        00000011  
+5810.433  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.496  Trigger   Status        00000011  
+5810.496  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.559  Trigger   Status        00000011  
+5810.559  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.559  Trigger   Timer         00000018  
+5810.623  Trigger   Status        00000011  
+5810.624  TrDatChg  Timer         00000018  [08][00][00][00]
+5810.624  TrDatChg  Status        00000011  [20][B4][00][01]
+5810.686  Trigger   Status        00000011  
+5810.687  TrDatChg  Status        00000011  [20][B4][00][01]
+5810.750  Trigger   Status        00000011  
+5810.751  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.815  Trigger   Status        00000011  
+5810.815  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.877  Trigger   Status        00000011  
+5810.877  TrDatChg  Status        00000011  [00][B4][00][01]
+5810.940  Trigger   Status        00000011  
+5810.941  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.004  Trigger   Status        00000011  
+5811.004  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.067  Trigger   Status        00000011  
+5811.068  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.131  Trigger   Status        00000011  
+5811.131  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.131  Trigger   Timer         00000018  
+5811.193  Trigger   Status        00000011  
+5811.194  TrDatChg  Timer         00000018  [08][00][00][00]
+5811.194  TrDatChg  Status        00000011  [20][B4][00][01]
+5811.256  Trigger   Status        00000011  
+5811.257  TrDatChg  Status        00000011  [20][B4][00][01]
+5811.318  Trigger   Status        00000011  
+5811.318  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.381  Trigger   Status        00000011  
+5811.381  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.444  Trigger   Status        00000011  
+5811.444  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.508  Trigger   Status        00000011  
+5811.508  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.570  Trigger   Status        00000011  
+5811.570  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.634  Trigger   Status        00000011  
+5811.634  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.697  Trigger   Status        00000011  
+5811.698  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.699  Trigger   Timer         00000018  
+5811.759  Trigger   Status        00000011  
+5811.761  TrDatChg  Timer         00000018  [08][00][00][00]
+5811.761  TrDatChg  Status        00000011  [20][B4][00][01]
+5811.822  Trigger   Status        00000011  
+5811.824  TrDatChg  Status        00000011  [20][B4][00][01]
+5811.885  Trigger   Status        00000011  
+5811.885  TrDatChg  Status        00000011  [00][B4][00][01]
+5811.948  Trigger   Status        00000011  
+5811.948  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.011  Trigger   Status        00000011  
+5812.012  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.074  Trigger   Status        00000011  
+5812.074  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.137  Trigger   Status        00000011  
+5812.137  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.200  Trigger   Status        00000011  
+5812.200  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.263  Trigger   Status        00000011  
+5812.264  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.264  Trigger   Timer         00000018  
+5812.326  Trigger   Status        00000011  
+5812.328  TrDatChg  Timer         00000018  [08][00][00][00]
+5812.328  TrDatChg  Status        00000011  [20][B4][00][01]
+5812.389  Trigger   Status        00000011  
+5812.390  TrDatChg  Status        00000011  [20][B4][00][01]
+5812.452  Trigger   Status        00000011  
+5812.453  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.516  Trigger   Status        00000011  
+5812.516  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.579  Trigger   Status        00000011  
+5812.579  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.643  Trigger   Status        00000011  
+5812.644  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.706  Trigger   Status        00000011  
+5812.706  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.769  Trigger   Status        00000011  
+5812.769  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.831  Trigger   Status        00000011  
+5812.831  TrDatChg  Status        00000011  [00][B4][00][01]
+5812.831  Trigger   Timer         00000018  
+5812.894  Trigger   Status        00000011  
+5812.896  TrDatChg  Timer         00000018  [08][00][00][00]
+5812.896  TrDatChg  Status        00000011  [20][B4][00][01]
+5812.958  Trigger   Status        00000011  
+5812.960  TrDatChg  Status        00000011  [20][B4][00][01]
+5813.022  Trigger   Status        00000011  
+5813.022  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.085  Trigger   Status        00000011  
+5813.085  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.148  Trigger   Status        00000011  
+5813.148  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.210  Trigger   Status        00000011  
+5813.210  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.273  Trigger   Status        00000011  
+5813.274  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.337  Trigger   Status        00000011  
+5813.337  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.401  Trigger   Status        00000011  
+5813.401  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.401  Trigger   Timer         00000018  
+5813.464  Trigger   Status        00000011  
+5813.466  TrDatChg  Timer         00000018  [08][00][00][00]
+5813.466  TrDatChg  Status        00000011  [20][B4][00][01]
+5813.528  Trigger   Status        00000011  
+5813.529  TrDatChg  Status        00000011  [20][B4][00][01]
+5813.592  Trigger   Status        00000011  
+5813.592  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.655  Trigger   Status        00000011  
+5813.655  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.718  Trigger   Status        00000011  
+5813.719  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.782  Trigger   Status        00000011  
+5813.782  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.846  Trigger   Status        00000011  
+5813.846  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.908  Trigger   Status        00000011  
+5813.909  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.972  Trigger   Status        00000011  
+5813.972  TrDatChg  Status        00000011  [00][B4][00][01]
+5813.972  Trigger   Timer         00000018  
+5814.035  Trigger   Status        00000011  
+5814.037  TrDatChg  Timer         00000018  [08][00][00][00]
+5814.037  TrDatChg  Status        00000011  [20][B4][00][01]
+5814.097  Trigger   Status        00000011  
+5814.099  TrDatChg  Status        00000011  [20][B4][00][01]
+5814.161  Trigger   Status        00000011  
+5814.162  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.224  Trigger   Status        00000011  
+5814.224  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.287  Trigger   Status        00000011  
+5814.287  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.349  Trigger   Status        00000011  
+5814.350  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.412  Trigger   Status        00000011  
+5814.412  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.475  Trigger   Status        00000011  
+5814.476  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.538  Trigger   Status        00000011  
+5814.538  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.539  Trigger   Timer         00000018  
+5814.603  Trigger   Status        00000011  
+5814.605  TrDatChg  Timer         00000018  [08][00][00][00]
+5814.605  TrDatChg  Status        00000011  [20][B4][00][01]
+5814.667  Trigger   Status        00000011  
+5814.668  TrDatChg  Status        00000011  [20][B4][00][01]
+5814.731  Trigger   Status        00000011  
+5814.731  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.793  Trigger   Status        00000011  
+5814.794  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.857  Trigger   Status        00000011  
+5814.857  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.920  Trigger   Status        00000011  
+5814.920  TrDatChg  Status        00000011  [00][B4][00][01]
+5814.983  Trigger   Status        00000011  
+5814.983  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.046  Trigger   Status        00000011  
+5815.046  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.110  Trigger   Status        00000011  
+5815.110  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.111  Trigger   Timer         00000018  
+5815.172  Trigger   Status        00000011  
+5815.173  TrDatChg  Timer         00000018  [08][00][00][00]
+5815.173  TrDatChg  Status        00000011  [20][B4][00][01]
+5815.235  Trigger   Status        00000011  
+5815.236  TrDatChg  Status        00000011  [20][B4][00][01]
+5815.298  Trigger   Status        00000011  
+5815.299  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.362  Trigger   Status        00000011  
+5815.362  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.425  Trigger   Status        00000011  
+5815.425  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.488  Trigger   Status        00000011  
+5815.488  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.552  Trigger   Status        00000011  
+5815.552  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.614  Trigger   Status        00000011  
+5815.615  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.677  Trigger   Status        00000011  
+5815.678  TrDatChg  Status        00000011  [00][B4][00][01]
+5815.678  Trigger   Timer         00000018  
+5815.741  Trigger   Status        00000011  
+5815.773  TrDatChg  Timer         00000018  [08][00][00][00]
+5815.773  TrDatChg  Status        00000011  [20][B4][00][01]

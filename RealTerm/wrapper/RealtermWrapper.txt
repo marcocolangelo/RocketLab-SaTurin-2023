@@ -1,0 +1,17 @@
+The RealtermWrapper ActiveX/COM is a .NET assembly that allows Internet Explorer/JSCRIPT to see Realterm ActiveX/COM Events.
+We don't know why Realterm itself doesn't work, so the wrapper is a workaround for it.
+
+The wrapper should have be installed and registered in the realterm installer. (V2.0.0.70X)
+
+To register it:
+cd c:\Windows\Microsoft.NET\Framework\v2.0.50727
+RegAsm.exe "c:\program files\bel\realterm\wrapper\realtermwrapper.dll" /codebase
+
+or on 64 bit systems:
+RegAsm.exe "c:\program files (x86)\bel\realterm\wrapper\realtermwrapper.dll" /codebase
+
+to unregister it:
+cd c:\Windows\Microsoft.NET\Framework\v2.0.50727
+RegAsm.exe "c:\program files\bel\realterm\wrapper\realtermwrapper.dll" /unreg
+
+
