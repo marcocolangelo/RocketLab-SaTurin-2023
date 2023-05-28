@@ -1,6 +1,6 @@
 %% Initialization 
 clear all; close all; clc 
- T = readtable("D:\Desktop\RocketLab2023\RocketnRoll_MATLAB_2023\RealTerm\captures\prova_salvo.txt"); % input IMU data
+ T = readtable("Data_Log.TXT"); % input IMU data
 % T = readtable("dataLog00169.TXT"); % input IMU data
 %% Input parameters
 accel_fs = 10; % lpf accelerometer [Hz]

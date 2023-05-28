@@ -7,7 +7,7 @@ accel_fs = 1; % lpf accelerometer [Hz]
 gyro_fs = 1.5; % lpf gyroscope [Hz]
 clr=[0.3 0.3 0.3]; % color of non-filtered data
 %% Parameters processing
-i_t0 = 2740;
+i_t0 = 2340;
 i_tf = 4350;
 % IMU data sorting
 accel_raw = T{:,{'aX','aY','aZ'}}; % [mg]
@@ -24,13 +24,13 @@ somma=0;
 % IMU auxiliary variables
 fs=0.1; % sampling frequency [Hz]
 % IMU data filtering
-[b_accel,a_accel] = butter(9,accel_fs/(fs*20)); % design order 9 Butterworth filter accelerometer
-[b_gyro,a_gyro] = butter(9,gyro_fs/(fs*20)); % design order 9 Butterworth filter accelerometer
+[b_accel,a_accel] = butter(9,0.09); % design order 9 Butterworth filter accelerometer
+[b_gyro,a_gyro] = butter(9,0.09); % design order 9 Butterworth filter accelerometer
 accel_f = filtfilt(b_accel,a_accel,accel_raw);
 gyro_f = filtfilt(b_gyro,a_gyro,gyro_raw);
 
 %accel_offset = 0*mean(accel_f(1:20,:)); % [m/s^2]
-gyro_offset = 0*mean(gyro_f(1:20,:)); % [deg/s]
+gyro_offset =[-0.25,-0.2,-0.2]; % [deg/s]
 accel_offset = [-1.2, -9.95+9.81, -0.75];
 %gyro_offset = [0.1178   -0.0785    0.1692];
 % IMU data correction
@@ -141,11 +141,15 @@ for k=1:(n-1)
     accel_tot(3,k) = accel(3,k)-9.8*cos(eul(2,k))*cos(eul(3,k));
 
     %vel(:,k+1) = vel(:,k)+accel(:,k)*(t(k+1)-t(k)); % velocity (body axes)
-if abs(accel_norm(k+1,:) - accel_norm(k,:)) < 0.005
-   vel(:,k+1) = 0;
-else
+% if abs(accel_norm(k+1,:) - accel_norm(k,:)) < 0.05 && abs(accel_norm(k+1)) < 0.3
+%    vel(:,k+1) = vel(:,k);
+% else
     vel(:,k+1) = vel(:,k)+accel_tot(:,k)*(t(k+1)-t(k)); % velocity (body axes)
-end    
+% end    
+
+[b_vel, a_vel] = butter(9,0.0305,'high');
+  vel = filtfilt(b_vel,a_vel,vel');
+  vel = vel';
 
     L = [cos(eul(2,k+1))*cos(eul(1,k+1)), -cos(eul(3,k+1))*sin(eul(1,k+1))+sin(eul(3,k+1))*sin(eul(2,k+1))*cos(eul(1,k+1)), sin(eul(3,k+1))*sin(eul(1,k+1))+cos(eul(3,k+1))*sin(eul(2,k+1))*cos(eul(1,k+1));
          cos(eul(2,k+1))*sin(eul(1,k+1)), cos(eul(3,k+1))*cos(eul(1,k+1))+sin(eul(3,k+1))*sin(eul(2,k+1))*sin(eul(1,k+1)), -sin(eul(3,k+1))*cos(eul(1,k+1))+cos(eul(3,k+1))*sin(eul(2,k+1))*sin(eul(1,k+1));
@@ -155,9 +159,9 @@ end
     pos(:,k+1) = pos(:,k)+vel_earth(:,k)*(t(k+1)-t(k));
 end
 
- [b_pos, a_pos] = butter(9,0.011,'high');
- pos = filtfilt(b_pos,a_pos,pos');
- pos = pos';
+  [b_pos, a_pos] = butter(9,0.011,'high');
+  pos = filtfilt(b_pos,a_pos,pos');
+  pos = pos';
 
 %% Figures
 
